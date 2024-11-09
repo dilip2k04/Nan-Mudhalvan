@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+/* Page Heading */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.line1,.line2{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.b1,.b2,.b3,.b4,.b5,.b6{
+    margin-top: 40px;
+    height: 260px;
+    width: 200px;
+    background-color: #c9c2c2;
+    border-radius: 20px;
+    color: black;
+}
+
+#s1,#s2,#s3,#s4,#s5,#s6{
+    height: 130px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.shin1,.shin2,.shin3,.shin4,.shin5,.shin6{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4{
+    text-align: center;
+}
+
+button{
+    size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
