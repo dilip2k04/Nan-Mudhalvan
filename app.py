@@ -11,7 +11,7 @@ app.secret_key = binascii.hexlify(os.urandom(24)).decode()  # Needed for flash m
 # Database configuration
 db_config = {
     'host': 'database-1.c1a82ycywy8s.ap-southeast-2.rds.amazonaws.com',
-    'user': 'root',
+    'user': 'admin',
     'password': 'Pecccit-134',
     'database': 'fresh'
 }
